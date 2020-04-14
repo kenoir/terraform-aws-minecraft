@@ -38,14 +38,14 @@ variable "mc_root" {
   default     = "/home/minecraft"
 }
 
-variable "mc_version" {
-  description = "Which version of minecraft to install"
-  default     = "1.12.2"
-}
-
 variable "mc_backup_freq" {
   description = "How often (mins) to sync to S3"
   default     = "5"
+}
+
+variable "download_path" {
+  description = "Path to download server from (default points to 1.15.2)"
+  default     = "https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar"
 }
 
 // You'll want to tune these next two based on the instance type

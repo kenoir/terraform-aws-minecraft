@@ -32,7 +32,7 @@ module "minecraft" {
 |mc_backup_freq|How often (mins) to sync to S3|5||
 |mc_port|TCP port for minecraft|25565||
 |mc_root|Where to install minecraft|`/home/minecraft`||
-|mc_version|Which version of minecraft to install|1.12.2||
+|download_path|Where to download server jar from|https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar (1.15.2)||
 |subnet_id|VPC subnet id to place the instance||Yes|
 |tags|Any extra tags to assign to objects|||
 |vpc_id|VPC for security group||Yes|
